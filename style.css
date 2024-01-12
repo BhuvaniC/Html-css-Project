@@ -1,0 +1,405 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+ .header{
+  position: fixed;
+  width: 100%;
+ }
+ .bgimg {
+    background-image: url('/coverimages/Cover-1-1536x864.jpg');
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 120vh;
+   width: 100%;
+  /* position: inherit; */
+  }
+
+  /* Banner image */
+
+.banner{
+ 
+  background-image: url('/coverimages/mobile-cover-banner-1536x512.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 100vh;
+    width: 100%;
+    
+}
+ .header nav{
+  position: fixed;
+    background-color: #b4c70b;
+    display: flex;
+    width: 100%;
+  }
+nav ul li {
+ 
+   display: inline-block;
+   list-style-type: none;
+   padding: 15px 15px;
+   margin-top: 1.5em;
+}
+nav ul li a{
+    
+   display: flex ;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 1rem;
+    
+}
+
+/* Farm2Home Title */
+
+.title{
+    display: flex;
+    padding-right: 15%;
+    margin-top: 1.5em;
+    color: white;
+font-weight: bolder;
+}
+.title a{
+  text-decoration: none;
+  color:white;
+}
+/* navbar menus */
+
+.box:hover , .dropbtn:hover {
+    background-color:rgba(0,0,0,0.1);
+    box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    
+}
+.dropdown-content li:hover{
+  width: 100%;
+  background-color:rgba(0,0,0,0.1);
+  box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
+/* shop dropdown */
+.dropbtn {
+  position: relative;
+  background-color: #b4c70b;
+  color:white;
+  font-weight: bolder;
+  font-size: 1rem;
+  border: none;
+}
+.dropdown  {
+  display: inline-block !important;
+  
+}
+.dropdown-content {
+
+  display: none;
+  position: absolute;
+  right:730px;
+ 
+ 
+}
+.dropdown-content li{
+  display: inline-block;
+  height: 50px;
+  margin: 0px;
+  width: 100% !important;
+ 
+}
+
+.dropdown:hover .dropdown-content {
+  
+  display: block !important;
+  background-color: #b4c70b;
+  width:230px;
+
+  
+}
+
+
+
+
+
+/* Search box */
+.search{
+border: none;
+margin-left: 50px;
+    height:30px;
+    width:300px;
+    outline: none;
+    padding:10px;
+    border-radius: 10px;
+    
+}
+input[type="search"] {
+  border: none;
+  background:  #fff;
+  font-size: 14px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+input[type="search"]::placeholder {
+  color: #bbb;
+}
+.search-icon{
+  color:#fff;
+  position: absolute;
+  cursor: pointer;
+
+  font-size: 30px;
+  top:40px;
+  left: 81%; 
+  
+}
+.shopping-icon{
+  font-size: 35px;
+   top:38px;
+  right:10%; 
+  position: absolute;
+  cursor: pointer;
+}
+
+/***************************************Grid Container******************************/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #ffff;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  padding: 20px;
+  font-size: 18px;
+  color: #4d6b05;
+  font-weight:bolder ;
+  padding-top: 10px;
+  text-decoration: none;
+  text-align: center;
+}
+.categories{
+  margin: 0;
+  margin-top: 20px !important;
+  /* margin-bottom: 50px; */
+  color: #4d6b05;
+  font-size: 40px;
+  text-align: center;
+  padding: 10px;
+}
+
+.gallery-container{
+  padding: 50px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 300px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+  opacity: 0.9;
+  box-shadow: inset;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  margin: 0;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  background-color: #4d6b05;
+}
+.desc-2{
+  text-transform: uppercase;
+  text-align: center;
+}
+.desc-2:hover{
+color:#4d6b05;
+
+}
+.desc-3 p{
+  color:#4d6b05;
+  text-align: center;
+}
+
+
+/************************************Image slider*******************************/
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.image-gallery{
+  top:0;
+  padding: 50px;
+ 
+}
+.image-container{
+  padding-bottom: 50px;
+}
+.image-container img:hover{
+  opacity:0.9;
+ border-radius: 5px;
+ 
+}
+/*****************************Testimonial**********************************/
+.testimonial{
+  padding-bottom: 10px;
+  padding:50px;
+}
+
+.testimonial h1{
+  padding-top:20px;
+  text-align: center;
+  color: #4c6b05c2;
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+.testi-row-container{
+  display: flex;
+  justify-content: space-between;
+}
+.col-container{
+  padding:10px;
+  float: left;
+  width: 50%;
+  border: 1px solid #bba2a2;
+  background-color:azure;
+  border-radius: 5px;
+  height:200px;
+  width:400px;
+  box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.testi-name{
+  text-align: center;
+}
+.col-container span{
+  color: yellow;
+  font-weight: bold;
+  
+}
+
+
+
+
+
+
+
+
+
+
+/* Increase the font-size of a span element */
+.container span {
+  
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+
+
+/***********************************Footer*******************************************/
+.footer-container{
+  padding: 20px;
+  top: 10%;
+}
+footer.footer {
+  float: right;
+  bottom: 0;
+  height: auto;
+  width: 100%;
+  background-color: #333333;
+  color: white;
+  font-size: 14px;
+}
+.footer img{
+  float: left;
+ top:50px;
+margin-left: 50px;
+margin-top: 50px;
+}
+.footer-content{
+  column-gap: 20px;
+  float: left;
+  /* flex:2; */
+ display: grid;
+/* grid-template-columns: 4 2 1; */
+width: 20%;
+}
+.socialmedia-icons{
+  display: flex;
+  margin-left: 5px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.bottom-bar{
+  /* position: relative; */
+  overflow-x: hidden;
+  width: 100%;
+  bottom: 0;
+  font-size: 16px;
+  width: 100%;
+  color: white;
+  text-align: center;
+padding: 20px;
+}
+.footer-content a{
+text-decoration: none;
+color: white;
+}
+.footer-content .quick-links:hover{
+  color: #b4c70b;
+}
+
+.bottom-bar a{
+  color:#fff;
+  text-decoration: none;
+}
+.bottom-bar a:hover{
+  color: #b4c70b;
+}
+span{
+  color: #bba2a2;
+}
+
+.footer-content .socialmedia-icons i{
+  margin-left: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
